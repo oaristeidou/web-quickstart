@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Snippet: Login Form</title>
+  
+  
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css'>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!--<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>-->
+
+  
+</head>
+
+<body>
+    <div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Please login</h2>
+      <input type="text" class="form-control" name="username" id="username" placeholder="Email Address" required="" autofocus="" />
+      <input type="password" class="form-control" name="password" id="password" placeholder="Password" required=""/>
+      <label class="checkbox">
+        <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+      </label>
+      <button id="btnLogin" class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+      <button id="btnSignUp" class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      <button id="btnLogout" class="btn btn-lg btn-primary btn-block hide" type="submit">Logout</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCs6O6oEpp3_t4BjRgVFAXlCkm-2aUQ-7A",
+      authDomain: "web-quickstart-373b2.firebaseapp.com",
+      databaseURL: "https://web-quickstart-373b2.firebaseio.com",
+      storageBucket: "web-quickstart-373b2.appspot.com",
+      messagingSenderId: "609389169468"
+    };
+    firebase.initializeApp(config);
+  </script>
+</body>
+</html>
